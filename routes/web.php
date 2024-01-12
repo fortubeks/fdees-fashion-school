@@ -19,9 +19,12 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/dashboard');
-})->middleware('auth');
+// Route::get('/', function () {
+//     return redirect('/dashboard');
+// })->middleware('auth');
+
+Route::get('/', [App\Http\Controllers\WebsiteController::class, 'index']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -84,6 +87,16 @@ Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create']
 Route::post('/reset-password', [ResetPasswordController::class, 'store'])
     ->middleware('guest');
 
-Route::get('/laravel-examples/user-profile', [ProfileController::class, 'index'])->name('users.profile')->middleware('auth');
+Route::get('/user-profile', [ProfileController::class, 'index'])->name('users.profile')->middleware('auth');
 Route::put('/laravel-examples/user-profile/update', [ProfileController::class, 'update'])->name('users.update')->middleware('auth');
-Route::get('/laravel-examples/users-management', [UserController::class, 'index'])->name('users-management')->middleware('auth');
+Route::get('/users-management', [UserController::class, 'index'])->name('users-management')->middleware('auth');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('icons', ['as' => 'pages.icons', 'uses' => 'App\Http\Controllers\PageController@icons']);
+});
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::resource('students', 'App\Http\Controllers\StudentController');
+	Route::resource('student-payments', 'App\Http\Controllers\StudentPaymentController');
+    Route::resource('enrollments', 'App\Http\Controllers\EnrollmentController');
+});
