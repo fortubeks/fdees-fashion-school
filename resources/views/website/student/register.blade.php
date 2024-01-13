@@ -43,25 +43,6 @@
   </section>
   <!-- end header inner -->
   <div class="clearfix"></div>
-  
-  <section>
-    <div class="container">
-      <div class="divider-line solid light opacity-7 "></div>
-      <div class="row "> <br/>
-        <br/>
-        <div class="col-md-9 col-centered text-center">
-          <h3 class="text-pink-3 roboto-slab font-weight-3">Welcome to Fdees Fashion Academy</h3>
-          <h4 class="text-pink-3 roboto-slab font-weight-3">
-
-At Fdees Fashion Academy, we believe that fashion is not just about clothing - it's a powerful form of self-expression and a dynamic art that reflects culture, innovation, and individuality. Our academy stands as a testament to the transformative potential of education in the world of fashion.</h4>
-          <br/>
-          <br/>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="clearfix"></div>
-  <!-- end section -->
 
   <section>
     <div class="pagenation-holder">
@@ -71,7 +52,7 @@ At Fdees Fashion Academy, we believe that fashion is not just about clothing - i
             <h3>About Us</h3>
           </div>
           <div class="col-md-6 text-right">
-            <div class="pagenation_links"><a href="{{url('/')}}">Home</a><i> / </i> About Us </div>
+            <div class="pagenation_links"><a href="{{url('/')}}">Home</a><i> / </i> Registration </div>
           </div>
         </div>
       </div>
