@@ -24,7 +24,9 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 // })->middleware('auth');
 
 Route::get('/', [App\Http\Controllers\WebsiteController::class, 'index']);
-
+Route::get('/courses', [App\Http\Controllers\WebsiteController::class, 'courses']);
+Route::get('/contact', [App\Http\Controllers\WebsiteController::class, 'contact']);
+Route::get('/about', [App\Http\Controllers\WebsiteController::class, 'about']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
