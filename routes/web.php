@@ -28,6 +28,8 @@ Route::get('/courses', [App\Http\Controllers\WebsiteController::class, 'courses'
 Route::get('/contact', [App\Http\Controllers\WebsiteController::class, 'contact']);
 Route::get('/about', [App\Http\Controllers\WebsiteController::class, 'about']);
 
+Route::get('/student-register', [App\Http\Controllers\WebsiteController::class, 'showStudentRegistrationForm']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard')->middleware('auth');

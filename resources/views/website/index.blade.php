@@ -189,7 +189,7 @@
           <!--end item-->
           
           <div class="col-divider-margin-3"></div>
-          <div class="feature-box-81 bmargin"> <a href="#">
+          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#manual')}}">
             <div class="image-holder">
               <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Manual Fashion Illustration<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
@@ -202,7 +202,7 @@
         <!--end item-->
         
         <div class="col-md-4 col-sm-6">
-          <div class="feature-box-81 bmargin"> <a href="#">
+          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#intermediate')}}">
             <div class="image-holder">
               <div class="hover-strip active">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Intermediate<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
@@ -215,7 +215,7 @@
         <!--end item-->
         
         <div class="col-md-4 col-sm-6">
-          <div class="feature-box-81 bmargin"> <a href="#">
+          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#advanced')}}">
             <div class="image-holder">
               <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Advanced<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
@@ -225,7 +225,7 @@
           <!--end item-->
           
           <div class="col-divider-margin-3"></div>
-          <div class="feature-box-81 bmargin"> <a href="#">
+          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#digital')}}">
             <div class="image-holder">
               <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Digital Fashion Illustration<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
@@ -251,9 +251,9 @@
             <h3 class=" roboto-slab uppercase less-mar3">Our Approach</h3>
             <div class="title-line-9 less-margin align-center"></div>
             <div class="clearfix"></div>
-            <p>Lorem ipsum dolor sit amet, consectetuer <span class="text-pink-3">adipiscing elit Suspendisse</span> et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. </p>
+            <p>At Fdees Fashion Academy, our approach to fashion education goes beyond the conventional. We understand that creativity knows no bounds, and we strive to cultivate an environment that nurtures, challenges, and inspires our students to reach new heights in the world of fashion. </p>
             <br/>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. </p>
+            <p>Each student is unique, and our faculty recognizes the individual strengths and aspirations of every student. Our personalized mentorship program connects students with experienced professionals who provide guidance, support, and insights tailored to each student's journey. </p>
             <br/>
             <a href="#" class="read-more pink-3"><i class="fa fa-angle-double-right"></i> Read More</a> </div>
           <!--end item-->
@@ -267,14 +267,14 @@
 			data-delay="500"
 			data-ease="easeOutExpo"
 			data-duration="1230"
-			data-effect="scale(1.5,1.6)"> Praesent mattis commodo augue.</h3>
+			data-effect="scale(1.5,1.6)"> Cutting-Edge Curriculum</h3>
                 <h3 class="ms-layer text44"
 			style="top: 225px; left:50px;"
 			data-type="text"
 			data-delay="500"
 			data-ease="easeOutExpo"
 			data-duration="1230"
-			data-effect="scale(1.5,1.6)"> Lorem ipsum dolor sit </h3>
+			data-effect="scale(1.5,1.6)"> Personalized Mentorship </h3>
                 <img src="js/masterslider/blank.gif" data-src="http://placehold.it/600x300" alt=""/> <a href="http://player.vimeo.com/video/80567526" data-type="video"></a> </div>
               <!-- end --> 
               
@@ -464,7 +464,7 @@
           <div class="col-md-8 col-centered">
             <h1 class="raleway text-white parallax-section-title uppercase">Studying at Fdees</h1>
             <br/>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit <span class="text-pink-3">Suspendisse et justo Praesent</span> mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam sit amet dolor Vestibulum  consectetuer adipiscing elit.</p>
+            <p class="text-white">Discover a fashion school that believes in unleashing the boundless potential of creative minds. At Fdees Fashion Academy, our approach is not just about education; it's about fostering a community of forward-thinkers and trailblazers who will shape the future of fashion.</p>
             <br/>
             <a class="btn btn-pink-3 btn-round" href="#">Read more</a> <br/>
           </div>

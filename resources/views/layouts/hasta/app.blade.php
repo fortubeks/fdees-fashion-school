@@ -60,14 +60,14 @@
             <div class="topbar-left-items">
                 <ul class="toplist toppadding pull-left paddtop1">
                 <li class="rightl">Call us</li>
-                <li><a href="tel:+234 80 0944 0084">+234 80 0944 0084 </a></li>
+                <li><a href="tel:+234 80 0944 0084">+234 809 9019 989 </a></li>
                 </ul>
             </div>
             <!--end left-->
             
             <div class="topbar-right-items pull-right">
                 <ul class="toplist toppadding">
-                <li><a href="#" class=" btn btn-pink-3 less-top-bottom-padding btn-round btn-small-2">Register</a></li>
+                <li><a href="{{url('/student-register')}}" class=" btn btn-pink-3 less-top-bottom-padding btn-round btn-small-2">Register</a></li>
                 </ul>
             </div>
             </div>
