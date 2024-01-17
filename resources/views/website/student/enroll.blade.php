@@ -74,7 +74,7 @@ window.addEventListener('load', function() {
 
 $('#course').change(function() {
     var course_id = $("#course").val();
-    
+    $("#academic_session").empty();
     let url = "{{url('/course-upcoming-sessions/')}}";
     if(course_id != ''){
         $.get(url, {course_id: course_id}, function(data,status){

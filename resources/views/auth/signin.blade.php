@@ -36,7 +36,7 @@
                                         <div class="mb-3">
                                             <input type="email" id="email" name="email" class="form-control"
                                                 placeholder="Enter your email address"
-                                                value="{{ old('email') ? old('email') : 'superadmin@fdeesfashionschool.com' }}"
+                                                value="{{ old('email') ? old('email') : '' }}"
                                                 aria-label="Email" aria-describedby="email-addon">
                                         </div>
                                         <label>Password</label>
