@@ -10,7 +10,7 @@ class StudentController extends Controller
 {
     public function index(Student $model)
     {
-        return view('students.index', ['students' => $model->orderBy('name','ASC')->paginate(15)]);
+        return view('students.index', ['students' => $model->paginate(15)]);
     }
 
     public function create()
