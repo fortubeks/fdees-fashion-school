@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('student_id');
             $table->foreignId('course_id');
+            $table->foreignId('academic_session_id');
+            $table->string('status')->default('waiting');
             $table->timestamps();
         });
     }

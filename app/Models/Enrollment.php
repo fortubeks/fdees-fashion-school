@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Enrollment extends Model
 {
     use HasFactory;
+    protected $fillable = ['course_id','student_id','academic_session_id'];
+    public function student(){
+        return $this->belongsTo('App\Models\Student');
+    }
+    public function course(){
+        return $this->belongsTo('App\Models\Course');
+    }
+    public function session(){
+        return $this->belongsTo('App\Models\Session');
+    }
 }

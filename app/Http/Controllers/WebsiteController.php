@@ -27,4 +27,8 @@ class WebsiteController extends Controller
     {
         return view('website.student.register');
     }
+    public function showRegistrationPaymentPage()
+    {
+        return view('website.student.registration-payment');
+    }
 }

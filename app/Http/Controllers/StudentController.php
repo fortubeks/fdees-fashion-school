@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StudentStoreRequest;
 use App\Models\Student;
 use Illuminate\Http\Request;
 
@@ -17,9 +18,13 @@ class StudentController extends Controller
         return view('students/create');
     }
 
-    public function store(Request $request)
+    public function store(StudentStoreRequest $request)
     {
-        Student::create($request->all());
+        $student = Student::create($request->all());
+        if(!auth()){
+            session()->put('student',$student);
+            return redirect('student-enroll')->with('status','Student details saved successfully');
+        }
         return redirect('students')->with('status','Student added successfully');
     }
 
@@ -29,7 +34,7 @@ class StudentController extends Controller
         return view('students.show')->with(compact('students','student_payments'));
     }
 
-    public function update(Request $request, Customer $student)
+    public function update(Request $request, Student $student)
     {
         $student->update($request->all());
         return redirect('students/'.$student->id)->with('status','Student updated successfully');
@@ -39,5 +44,12 @@ class StudentController extends Controller
     {
         $student->delete();
         return redirect('students')->with('status','Student was deleted successfully');
+    }
+
+    public function registerStudent(StudentStoreRequest $request)
+    {
+        $student = Student::create($request->all());
+        session()->put('student',$student);
+        return redirect('student-enroll')->with('status','Student details saved successfully');
     }
 }
