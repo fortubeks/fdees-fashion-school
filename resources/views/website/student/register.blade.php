@@ -33,7 +33,7 @@
                             </div>
                             <div class="pt-0 card-body">
 
-                                <div class="row">
+                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">First name</label>
                                         <input type="text" name="first_name" id="first_name"
@@ -59,7 +59,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">Phone Number</label>
                                         <input type="text" name="phone" id=""

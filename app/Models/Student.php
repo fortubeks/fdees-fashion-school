@@ -13,13 +13,13 @@ class Student extends Model
     'marital_status','date_of_birth', 'religion', 'occupation', 'home_address', 'office_address', 'highest_qualification','sponsor', 'phone', ];
 
     public function enrollments(){
-        return $this->hasMany('App\Model\Enrollment');
+        return $this->hasMany('App\Models\Enrollment');
     }
     public function guarantor(){
-        return $this->hasOne('App\Model\Guarantor');
+        return $this->hasOne('App\Models\Guarantor');
     }
     public function payments(){
-        return $this->hasMany('App\Model\Payment');
+        return $this->hasMany('App\Models\StudentPayment');
     }
     public function name(){
         return $this->first_name. ' '. $this->last_name;

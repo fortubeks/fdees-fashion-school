@@ -1,9 +1,11 @@
 <x-app-layout>
+
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-app.navbar />
-        <div class="px-5 py-4 container-fluid ">
-            <form action="{{ url('students') }}" method="POST">
+    <div class="px-5 py-2 container-fluid ">
+            <form action="{{ url('students/'.$student->id) }}" method="POST">
                 @csrf
+                @method('PUT')
                 <div class="row justify-content-center">
                     <div class="col-lg-9 col-12">
                         @if (session('error'))
@@ -22,7 +24,7 @@
                     <div class="col-lg-12 col-12 ">
                         <div class="card " id="basic-info">
                             <div class="card-header">
-                                <h5>Basic Info</h5>
+                                <h5>Student details</h5>
                             </div>
                             <div class="pt-0 card-body">
 
@@ -30,24 +32,24 @@
                                     <div class="col-4">
                                         <label for="name">First name</label>
                                         <input type="text" name="first_name" id="first_name"
-                                            value="{{ old('first_name', '') }}" class="form-control">
+                                            value="{{ old('first_name', $student->first_name) }}" class="form-control">
                                         @error('first_name')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="middle_name">Middle name</label>
-                                        <input type="text" name="middle_name" id="middle_name"
-                                            value="{{ old('middle_name', '') }}" class="form-control">
-                                        @error('middle_name')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
                                     <div class="col-4">
                                         <label for="last_name">Last name</label>
                                         <input type="text" name="last_name" id="last_name"
-                                            value="{{ old('last_name', '') }}" class="form-control">
+                                            value="{{ old('last_name', $student->last_name) }}" class="form-control">
                                         @error('last_name')
+                                            <span class="text-danger text-sm">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email"
+                                            value="{{ old('email', $student->email) }}" class="form-control">
+                                        @error('email')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -55,16 +57,15 @@
                                 <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">Phone Number</label>
-                                        <input type="text" name="phone" id="first_name"
-                                            value="{{ old('phone', '') }}" class="form-control">
+                                        <input type="text" name="phone" id=""
+                                            value="{{ old('phone', $student->phone) }}" class="form-control">
                                         @error('phone')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
                                     <div class="col-4">
                                         <label for="middle_name">Date of Birth</label>
-                                        <input type="text" name="date_of_birth" id="middle_name"
-                                            value="{{ old('date_of_birth', '') }}" class="form-control">
+                                        <input type="date" name="date_of_birth" value="{{$student->date_of_birth}}" class="form-control">
                                         @error('date_of_birth')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
@@ -72,7 +73,7 @@
                                     <div class="col-4">
                                         <label for="sponsor">Sponsor name & phone</label>
                                         <input type="text" name="sponsor" id="sponsor"
-                                            value="{{ old('sponsor', '') }}" class="form-control">
+                                            value="{{ old('sponsor', $student->sponsor) }}" class="form-control">
                                         @error('sponsor')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
@@ -103,7 +104,7 @@
                                         <label for="religion">Religion</label>
                                         <select name="religion" class="form-control">
                                             <option value="christianity">Christianity</option>
-                                            <option value="muslim">Muslim</option>
+                                            <option selected value="muslim">Muslim</option>
                                         </select>
                                         @error('religion')
                                             <span class="text-danger text-sm">{{ $message }}</span>
@@ -114,7 +115,7 @@
                                     <div class="col-4">
                                         <label for="name">Occupation</label>
                                         <input type="text" name="occupation" id="occupation"
-                                            value="{{ old('occupation', '') }}" class="form-control">
+                                            value="{{ old('occupation', $student->occupation) }}" class="form-control">
                                         @error('occupation')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
@@ -132,8 +133,10 @@
                                     <div class="col-4">
                                         <label for="state">State</label>
                                         <select name="state" class="form-control">
-                                            <option value="Abia">Abia</option>
-                                            <option value="Abuja">Abuja</option>
+                                            <option>--Select State</option>
+                                            @foreach(getModelList('states') as $state)
+                                            <option value="{{$state->name}}">{{$state->name}}</option>
+                                            @endforeach
                                         </select>
                                         @error('state')
                                             <span class="text-danger text-sm">{{ $message }}</span>
@@ -141,24 +144,22 @@
                                     </div>
                                 </div>
                                 <div class="row p-2">
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <label for="name">Home Address</label>
                                         <input type="text" name="home_address" id="home_address"
-                                            value="{{ old('home_address', '') }}" class="form-control">
+                                            value="{{ old('home_address', $student->home_address) }}" class="form-control">
                                         @error('home_address')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <label for="name">Work Address</label>
                                         <input type="text" name="work_address" id="work_address"
-                                            value="{{ old('work_address', '') }}" class="form-control">
+                                            value="{{ old('work_address', $student->work_address) }}" class="form-control">
                                         @error('work_address')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                </div>
-                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">Highest Qualification</label>
                                         <select name="highest_qualification" class="form-control">
@@ -168,34 +169,14 @@
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    <div class="col-4">
-                                        <label for="programme_registered">Programme Registered</label>
-                                        <select name="programme_registered" class="form-control">
-                                            <option value="Advanced Diploma">Advanced Diploma</option>
-                                        </select>
-                                        @error('programme_registered')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="last_name">Intended Date</label>
-                                        <input type="text" name="intended_date" id="intended_date"
-                                            value="{{ old('intended_date', '') }}" class="form-control">
-                                        @error('intended_date')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
                                 </div>
                                 
-                                <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Save
-                                    changes</button>
+                                <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Update</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-        </div>
-        <x-app.footer />
         </div>
     </main>
 

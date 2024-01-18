@@ -31,13 +31,13 @@ class StudentController extends Controller
     public function show(Student $student)
     {
         $student_payments = $student->payments()->orderBy('created_at','desc')->paginate(15);
-        return view('students.show')->with(compact('students','student_payments'));
+        return view('students.show')->with(compact('student','student_payments'));
     }
 
     public function update(Request $request, Student $student)
     {
         $student->update($request->all());
-        return redirect('students/'.$student->id)->with('status','Student updated successfully');
+        return redirect('students/'.$student->id)->with('success','Student updated successfully');
     }
 
     public function destroy(Student $student)
