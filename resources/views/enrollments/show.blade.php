@@ -43,7 +43,7 @@
                                 <div class="col-6">
                                     <label for="phone">Session</label>
                                     <input type="text" name="phone" id="phone" placeholder="0733456987"
-                                        value="{{ $enrollment->academicSession->created_at }}" class="form-control">
+                                        value="{{ $enrollment->academicSession->start_date }}" class="form-control">
                                     @error('phone')
                                         <span class="text-danger text-sm">{{ $message }}</span>
                                     @enderror
