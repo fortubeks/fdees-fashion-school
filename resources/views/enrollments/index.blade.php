@@ -63,9 +63,10 @@
                                             </th>
                                             <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
                                                 Course</th>
-                                            <th
-                                                class="text-center text-secondary text-xs font-weight-semibold opacity-7">
+                                            <th class="text-center text-secondary text-xs font-weight-semibold opacity-7">
                                                 Enrolled Date</th>
+                                            <th class="text-center text-secondary text-xs font-weight-semibold opacity-7">
+                                            Payment Status</th>
                                             <th class="text-secondary opacity-7"></th>
                                         </tr>
                                     </thead>
@@ -88,10 +89,18 @@
                                             </td>
                                             <td>
                                                 <p class="text-sm text-dark font-weight-semibold mb-0">{{$enrollment->course->name}}</p>
-                                                <p class="text-sm text-secondary mb-0">{{$enrollment->academicSession->created_at}}</p>
+                                                <p class="text-sm text-secondary mb-0">{{$enrollment->academicSession->start_date}}</p>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-sm font-weight-normal">{{$enrollment->created_at}}</span>
+                                                <span class="text-secondary text-sm font-weight-normal">{{$enrollment->created_at->format('d-M-Y')}}</span>
+                                            </td>
+                                            <td class="align-middle text-center text-sm">
+                                                @if($enrollment->payment)
+                                                <p><span class="badge badge-sm border border-success text-success bg-success">Paid</span></p>
+                                                <p class="text-sm text-secondary mb-0">Not Paid</p>
+                                                @else
+                                                <p><span class="badge badge-sm border border-danger text-danger bg-danger">Not Paid</span></p>
+                                                @endif
                                             </td>
                                             <td class="align-middle">
                                                 <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
@@ -110,11 +119,7 @@
                                 </table>
                             </div>
                             <div class="border-top py-3 px-3 d-flex align-items-center">
-                                <p class="font-weight-semibold mb-0 text-dark text-sm">Page 1 of 10</p>
-                                <div class="ms-auto">
-                                    <button class="btn btn-sm btn-white mb-0">Previous</button>
-                                    <button class="btn btn-sm btn-white mb-0">Next</button>
-                                </div>
+                                
                                 @if($enrollments instanceof \Illuminate\Pagination\LengthAwarePaginator )
 
                                 {{$enrollments->links()}}

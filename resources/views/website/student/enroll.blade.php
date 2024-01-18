@@ -41,7 +41,7 @@
                                         <select name="course_id" id="course" class="form-control">
                                             <option value="">--Select course--</option>
                                             @foreach(getModelList('courses') as $course)
-                                            <option value="{{$course->id}}">{{$course->name}}</option>
+                                            <option value="{{$course->id}}">{{$course->name.' (₦'.$course->cost.')'}}</option>
                                             @endforeach
                                         </select>
                                         @error('course')

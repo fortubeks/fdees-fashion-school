@@ -86,8 +86,7 @@ class EnrollmentController extends Controller
             $enrollment->student->notify(new StudentEnrollment());
         }
 
-        session()->pull('student');
-
+        //session()->pull('student');
 
         session()->flash('success','You have been enrolled successfully. You are now in '.$enrollment->status.'list. Now make payment to secure your spot');
         return redirect('registration-payment');
