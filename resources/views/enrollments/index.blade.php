@@ -71,7 +71,7 @@
                                     </thead>
                                     <tbody>
                                         @foreach($enrollments as $enrollment)
-                                        <tr>
+                                        <tr class='clickable-row' data-href='{{url("/enrollments/".$enrollment->id)}}'>
                                             <td>
                                                 <div class="d-flex px-2 py-1">
                                                     <div class="d-flex align-items-center">
@@ -80,18 +80,18 @@
                                                             alt="user1">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center ms-1">
-                                                        <h6 class="mb-0 text-sm font-weight-semibold">John Michael</h6>
-                                                        <p class="text-sm text-secondary mb-0">john@creative-tim.com
+                                                        <h6 class="mb-0 text-sm font-weight-semibold">{{$enrollment->student->name()}}</h6>
+                                                        <p class="text-sm text-secondary mb-0">{{$enrollment->student->phone}}
                                                         </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <p class="text-sm text-dark font-weight-semibold mb-0">Manager</p>
-                                                <p class="text-sm text-secondary mb-0">Organization</p>
+                                                <p class="text-sm text-dark font-weight-semibold mb-0">{{$enrollment->course->name}}</p>
+                                                <p class="text-sm text-secondary mb-0">{{$enrollment->academicSession->created_at}}</p>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-sm font-weight-normal">23/04/18</span>
+                                                <span class="text-secondary text-sm font-weight-normal">{{$enrollment->created_at}}</span>
                                             </td>
                                             <td class="align-middle">
                                                 <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
@@ -132,3 +132,14 @@
     </main>
 
 </x-app-layout>
+<style>
+    [data-href] { cursor: pointer; }
+
+</style>
+<script>
+    window.addEventListener('load', function() {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+</script>

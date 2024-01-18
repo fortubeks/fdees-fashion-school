@@ -15,7 +15,7 @@ class EnrollmentController extends Controller
 {
     public function index(Enrollment $model)
     {
-        return view('enrollments.index', ['enrollments' => $model->orderBy('name','ASC')->paginate(15)]);
+        return view('enrollments.index', ['enrollments' => $model->orderBy('created_at','ASC')->paginate(15)]);
     }
 
     public function create()
@@ -31,8 +31,8 @@ class EnrollmentController extends Controller
 
     public function show(Enrollment $enrollment)
     {
-        $enrollment_payments = $enrollment->payments()->orderBy('created_at','desc')->paginate(15);
-        return view('enrollments.show')->with(compact('enrollments','enrollment_payments'));
+        //$enrollment_payments = $enrollment->payments()->orderBy('created_at','desc')->paginate(15);
+        return view('enrollments.show')->with(compact('enrollment'));
     }
 
     public function update(Request $request, Enrollment $enrollment)

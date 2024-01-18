@@ -83,22 +83,22 @@
                                                             alt="user1">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center ms-1">
-                                                        <h6 class="mb-0 text-sm font-weight-semibold">John Michael</h6>
-                                                        <p class="text-sm text-secondary mb-0">john@creative-tim.com
+                                                        <h6 class="mb-0 text-sm font-weight-semibold">{{$student->first_name}}</h6>
+                                                        <p class="text-sm text-secondary mb-0">{{$student->email}}
                                                         </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <p class="text-sm text-dark font-weight-semibold mb-0">Manager</p>
-                                                <p class="text-sm text-secondary mb-0">Organization</p>
+                                                <p class="text-sm text-dark font-weight-semibold mb-0"></p>
+                                                <p class="text-sm text-secondary mb-0"></p>
                                             </td>
                                             <td class="align-middle text-center text-sm">
                                                 <span
-                                                    class="badge badge-sm border border-success text-success bg-success">Online</span>
+                                                    class="badge badge-sm border border-success text-success bg-success">Registered</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-sm font-weight-normal">23/04/18</span>
+                                                <span class="text-secondary text-sm font-weight-normal"></span>
                                             </td>
                                             <td class="align-middle">
                                                 <a href="javascript:;" class="text-secondary font-weight-bold text-xs"

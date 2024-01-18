@@ -15,7 +15,7 @@ class Enrollment extends Model
     public function course(){
         return $this->belongsTo('App\Models\Course');
     }
-    public function session(){
-        return $this->belongsTo('App\Models\Session');
+    public function academicSession(){
+        return $this->belongsTo('App\Models\AcademicSession');
     }
 }
