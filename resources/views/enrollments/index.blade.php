@@ -97,14 +97,13 @@
                                             <td class="align-middle text-center text-sm">
                                                 @if($enrollment->payment)
                                                 <p><span class="badge badge-sm border border-success text-success bg-success">Paid</span></p>
-                                                <p class="text-sm text-secondary mb-0">Not Paid</p>
                                                 @else
                                                 <p><span class="badge badge-sm border border-danger text-danger bg-danger">Not Paid</span></p>
                                                 @endif
                                             </td>
                                             <td class="align-middle">
                                                 <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
-                                                    data-bs-toggle="tooltip" data-bs-title="Edit user">
+                                                    data-bs-toggle="tooltip" data-bs-title="Edit/show">
                                                     <svg width="14" height="14" viewBox="0 0 15 16"
                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path

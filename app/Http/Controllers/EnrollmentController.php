@@ -6,6 +6,7 @@ use App\Http\Requests\StudentEnrollRequest;
 use App\Http\Requests\StudentStoreRequest;
 use App\Models\Course;
 use App\Models\Enrollment;
+use App\Models\StudentPayment;
 use App\Models\User;
 use App\Notifications\NewEnrollment;
 use App\Notifications\StudentEnrollment;
@@ -39,6 +40,25 @@ class EnrollmentController extends Controller
     {
         $enrollment->update($request->all());
         return redirect('enrollments/'.$enrollment->id)->with('status','Enrollment updated successfully');
+    }
+
+    public function updateEnrollmentPaymentStatus($enrollment_id){
+        $enrollment = Enrollment::find($enrollment_id);
+        if($enrollment){
+            //add record to student payment if it does not exist
+            if(!$enrollment->payment){
+                StudentPayment::create([
+                    'student_id' => $enrollment->student->id,
+                    'enrollment_id' => $enrollment->id,
+                    'amount' => $enrollment->course->cost,
+                ]);
+                
+            }
+            session()->flash('success','Payment recorded and enrollment updated');
+            return redirect('enrollments/');
+        }
+        session()->flash('error','Enrollment not found');
+        return redirect('enrollments/');
     }
 
     public function destroy(Enrollment $enrollment)

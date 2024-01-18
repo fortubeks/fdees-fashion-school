@@ -35,7 +35,7 @@ Route::post('/student-enroll', [App\Http\Controllers\EnrollmentController::class
 Route::get('/course-upcoming-sessions', [App\Http\Controllers\AcademicSessionController::class, 'courseUpcomingSessions']);
 Route::post('/add-course-to-session', [App\Http\Controllers\AcademicSessionController::class, 'addCourseToSession']);
 Route::get('/registration-payment', [App\Http\Controllers\WebsiteController::class, 'showRegistrationPaymentPage']);
-
+Route::post('/update-enrollment-payment/{enrollment_id}', [App\Http\Controllers\EnrollmentController::class, 'updateEnrollmentPaymentStatus']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

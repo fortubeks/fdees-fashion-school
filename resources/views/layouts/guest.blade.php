@@ -72,7 +72,7 @@
 
     {{ $slot }}
     <!--   Core JS Files   -->
-    <script type="text/javascript" src="js/universal/jquery.js"></script> 
+    <script type="text/javascript" src="{{env('APP_URL').'js/universal/jquery.js'}}"></script> 
     <script src="{{env('APP_URL').'assets/js/core/popper.min.js'}}"></script>
     <script src="{{env('APP_URL').'assets/js/core/bootstrap.min.js'}}"></script>
     <script src="{{env('APP_URL').'assets/js/plugins/perfect-scrollbar.min.js'}}"></script>

@@ -54,6 +54,37 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mb-5 row justify-content-center">
+                <div class="col-lg-9 col-12 ">
+                    <div class="card " id="basic-info">
+                        <div class="pt-0 card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="location">Payment Status</label>
+                                    @if($enrollment->payment)
+                                    <p><span class="badge badge-sm border border-success text-success bg-success">Paid</span></p>
+                                    @else
+                                    <p><span class="badge badge-sm border border-danger text-danger bg-danger">Not Paid</span></p>
+                                    <p>
+                                    <form action="{{url('/update-enrollment-payment/'.$enrollment->id)}}" method="post" onsubmit="return confirm('Are you sure student has paid?'); ">
+                                        @csrf
+                                    <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Add Payment</button>
+                                    </form>
+                                    </p>
+                                    @endif
+                                </div>
+
+                                <div class="col-6">
+                                    
+                                
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <x-app.footer />
         </div>

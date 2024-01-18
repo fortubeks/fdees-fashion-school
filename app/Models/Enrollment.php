@@ -18,4 +18,7 @@ class Enrollment extends Model
     public function academicSession(){
         return $this->belongsTo('App\Models\AcademicSession');
     }
+    public function payment(){
+        return $this->hasOne('App\Models\StudentPayment');
+    }
 }
