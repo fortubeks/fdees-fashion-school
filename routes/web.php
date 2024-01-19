@@ -27,6 +27,7 @@ Route::get('/', [App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/courses', [App\Http\Controllers\WebsiteController::class, 'courses']);
 Route::get('/contact', [App\Http\Controllers\WebsiteController::class, 'contact']);
 Route::get('/about', [App\Http\Controllers\WebsiteController::class, 'about']);
+Route::get('/admissions', [App\Http\Controllers\WebsiteController::class, 'courses']);
 
 Route::get('/student-register', [App\Http\Controllers\WebsiteController::class, 'showStudentRegistrationForm']);
 Route::post('/student-register', [App\Http\Controllers\StudentController::class, 'registerStudent']);
@@ -110,6 +111,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('students', 'App\Http\Controllers\StudentController');
 	Route::resource('student-payments', 'App\Http\Controllers\StudentPaymentController');
     Route::resource('enrollments', 'App\Http\Controllers\EnrollmentController');
-    Route::resource('courses', 'App\Http\Controllers\CourseController');
+    Route::resource('courses-admin', 'App\Http\Controllers\CourseController');
     Route::resource('academic-sessions', 'App\Http\Controllers\AcademicSessionController');
 });

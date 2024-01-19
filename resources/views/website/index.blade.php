@@ -18,8 +18,6 @@
                 <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
                 <li> <a href="{{url('/courses/')}}#intermediate">Intermediate</a> </li>
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
-                <li> <a href="{{url('/courses/')}}#manual">Manual Fashion Illustration</a> </li>
-                <li> <a href="{{url('/courses/')}}#digital">Digital Fashion Illustration</a> </li>
               </ul>
             </li>
             <li><a href="#" class="dropdown-toggle">Gallery</a></li>
@@ -39,7 +37,7 @@
     <!-- slide 1 -->
     <div class="ms-slide slide-1" data-delay="9">
       <div class="slide-pattern"></div>
-      <img src="js/masterslider/blank.gif" data-src="images/bg-1.jpg" alt=""/>
+      <img src="js/masterslider/blank.gif" data-src="{{url('/images/home-bg-1.jpg')}}" alt=""/>
       
       <h3 class="ms-layer text42"
 			style="top: 250px; left:230px;"
@@ -66,12 +64,13 @@
 			data-effect="right(250)"> Read more </a> 
             
             <a class="ms-layer sbut19"
+            href="{{url('/student-register')}}"
 			style="left: 390px; top: 380px;"
 			data-type="text"
 			data-delay="2000"
 			data-ease="easeOutExpo"
 			data-duration="1200"
-			data-effect="right(250)"> Apply Now ! </a> 
+			data-effect="right(250)"> Register ! </a> 
             
             </div>
     <!-- end slide 1 --> 
@@ -80,7 +79,7 @@
     <!-- slide 2 -->
     <div class="ms-slide slide-2" data-delay="9">
       <div class="slide-pattern"></div>
-      <img src="js/masterslider/blank.gif" data-src="images/bg-1.jpg" alt=""/>
+      <img src="js/masterslider/blank.gif" data-src="{{url('/images/home-bg-2.jpg')}}" alt=""/>
       
       <h3 class="ms-layer text42 text-center"
 			style="top: 220px;"
@@ -107,12 +106,13 @@
 			data-effect="left(250)"> Read more </a> 
             
             <a class="ms-layer sbut19"
+            href="{{url('/student-register')}}"
 			style="left:820px; top: 360px;"
 			data-type="text"
 			data-delay="2000"
 			data-ease="easeOutExpo"
 			data-duration="1200"
-			data-effect="right(250)"> Apply Now ! </a> 
+			data-effect="right(250)"> Register ! </a> 
             
             </div>
     <!-- end slide 2 -->
@@ -120,7 +120,7 @@
     <!-- slide 3 -->
     <div class="ms-slide slide-3" data-delay="9">
       <div class="slide-pattern"></div>
-      <img src="js/masterslider/blank.gif" data-src="images/bg-1.jpg" alt=""/>
+      <img src="js/masterslider/blank.gif" data-src="{{url('/images/home-bg-3.jpg')}}" alt=""/>
       
       <h3 class="ms-layer text42 text-center"
 			style="top: 220px;"
@@ -147,13 +147,13 @@
 			data-effect="left(250)"> Read more </a> 
             
             <a class="ms-layer sbut19"
-      href="{{url('/sign-up')}}"
+            href="{{url('/student-register')}}"
 			style="left:820px; top: 360px;"
 			data-type="text"
 			data-delay="2000"
 			data-ease="easeOutExpo"
 			data-duration="1200"
-			data-effect="right(250)"> Apply Now ! </a> 
+			data-effect="right(250)"> Register ! </a> 
             
             </div>
     <!-- end slide 3 -->
@@ -188,15 +188,7 @@
             </a> </div>
           <!--end item-->
           
-          <div class="col-divider-margin-3"></div>
-          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#manual')}}">
-            <div class="image-holder">
-              <div class="hover-strip">
-                <h4 class="text-white nopadding roboto-slab font-weight-3">Manual Fashion Illustration<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
-              </div>
-              <img src="{{url('/images/about-1.jpg')}}" alt="" class="img-responsive"/> </div>
-            </a> </div>
-          <!--end item--> 
+          
           
         </div>
         <!--end item-->
@@ -204,12 +196,12 @@
         <div class="col-md-4 col-sm-6">
           <div class="feature-box-81 bmargin"> <a href="{{url('/courses#intermediate')}}">
             <div class="image-holder">
-              <div class="hover-strip active">
+              <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Intermediate<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
               </div>
-              <img src="{{url('/images/home-430.jpg')}}" alt="" class="img-responsive"/> </div>
+              <img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/> </div>
             </a> </div>
-          <!--end item--> 
+          <!--end item-->
           
         </div>
         <!--end item-->
@@ -224,15 +216,7 @@
             </a> </div>
           <!--end item-->
           
-          <div class="col-divider-margin-3"></div>
-          <div class="feature-box-81 bmargin"> <a href="{{url('/courses#digital')}}">
-            <div class="image-holder">
-              <div class="hover-strip">
-                <h4 class="text-white nopadding roboto-slab font-weight-3">Digital Fashion Illustration<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
-              </div>
-              <img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/> </div>
-            </a> </div>
-          <!--end item--> 
+          
           
         </div>
         <!--end item--> 
@@ -275,7 +259,7 @@
 			data-ease="easeOutExpo"
 			data-duration="1230"
 			data-effect="scale(1.5,1.6)"> Personalized Mentorship </h3>
-                <img src="js/masterslider/blank.gif" data-src="http://placehold.it/600x300" alt=""/> <a href="http://player.vimeo.com/video/80567526" data-type="video"></a> </div>
+                <img src="/images/home-approach.jpg" data-src="{{url('/images/home-approach.jpg')}}" alt=""/> </div>
               <!-- end --> 
               
             </div>
@@ -398,59 +382,7 @@
         </div>
         <!--end item-->
         
-        <div style="display: none;" class="col-md-6">
-          <h3 class=" roboto-slab uppercase less-mar3">Latest Events</h3>
-          <div class="title-line-9 less-margin align-center"></div>
-          <div class="clearfix"></div>
-          <br/>
-          <div id="owl-demo2" class="owl-carousel">
-            <div class="item">
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Monday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Tuesday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Wednesday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Thursday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-            </div>
-            <!--end slide item-->
-            
-            <div class="item">
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Monday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Tuesday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Wednesday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue.</p>
-              <br/>
-              <div class="divider-line solid light opacity-7"></div>
-              <br/>
-              <h4 class="uppercase oswald font-weight-3 text-pink-3">Thursday, March 16</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare hendrerit augue. Suspendisse et justo Praesent mattis commodo augue Aliquam ornare.</p>
-              <br/>
-            </div>
-            <!--end slide item--> 
-          </div>
-          <!--end carousel--> 
-        </div>
-        <!--end item--> 
+        
       </div>
     </div>
   </section>
@@ -507,13 +439,13 @@
                 <div class="feature-box24 bmargin">
                   <div class="inner"> <br/>
                     <br/>
-                    <h4 class="text-white uppercase oswald font-weight-3">Vivamus et justo in nunc </h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <h4 class="text-white uppercase oswald font-weight-3">Conducive atmosphere </h4>
+                    <p class="text-white">Conducive atmosphere for learning</p>
                     <br/>
                   </div>
                   <div class="image-holder">
                     <div class="overlay"></div>
-                    <img src="http://placehold.it/450x350" alt="" class="img-responsive"/> </div>
+                    <img src="{{url('/images/home-g-1.jpg')}}" alt="" class="img-responsive"/> </div>
                 </div>
               </div>
               <div class="item">
@@ -526,7 +458,7 @@
                   </div>
                   <div class="image-holder">
                     <div class="overlay"></div>
-                    <img src="http://placehold.it/450x350" alt="" class="img-responsive"/> </div>
+                    <img src="{{url('/images/home-g-2.jpg')}}" alt="" class="img-responsive"/> </div>
                 </div>
               </div>
               <div class="item">
@@ -539,7 +471,7 @@
                   </div>
                   <div class="image-holder">
                     <div class="overlay"></div>
-                    <img src="http://placehold.it/450x350" alt="" class="img-responsive"/> </div>
+                    <img src="{{url('/images/home-g-3.jpg')}}" alt="" class="img-responsive"/> </div>
                 </div>
               </div>
             </div>

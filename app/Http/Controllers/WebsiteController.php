@@ -23,6 +23,10 @@ class WebsiteController extends Controller
     {
         return view('website.about');
     }
+    public function admissions()
+    {
+        return view('website.admissions');
+    }
     public function showStudentRegistrationForm()
     {
         return view('website.student.register');

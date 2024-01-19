@@ -3,7 +3,7 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-app.navbar />
     <div class="px-5 py-2 container-fluid ">
-            <form action="{{ url('courses/'.$course->id) }}" method="POST">
+            <form action="{{ url('courses-admin/'.$course->id) }}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="row justify-content-center">

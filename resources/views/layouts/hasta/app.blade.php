@@ -99,13 +99,8 @@
                 <div class="clearfix"></div>
                 <div class="footer-title-bottomstrip"></div>
                 <ul class="usefull-links no-border">
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum ipsum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> About the academy</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Our approach</a></li>
                 </ul>
                 </div>
                 <!--end item-->
@@ -134,17 +129,13 @@
                 <!--end item-->
                 
                 <div class="col-md-4 clearfix">
-                <h4 class="uppercase footer-title less-mar3 roboto-slab font-weight-3">quick links</h4>
+                <h4 class="uppercase footer-title less-mar3 roboto-slab font-weight-3">Courses</h4>
                 <div class="clearfix"></div>
                 <div class="footer-title-bottomstrip"></div>
                 <ul class="usefull-links no-border">
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum ipsum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Beginner</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Intermediate</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Advanced</a></li>
                 </ul>
                 </div>
                 <!--end item-->

@@ -49,7 +49,7 @@
                                     </thead>
                                     <tbody>
                                         @foreach($courses as $course)
-                                        <tr class='clickable-row' data-href='{{url("/courses/".$course->id)}}'>
+                                        <tr class='clickable-row' data-href='{{url("/courses-admin/".$course->id)}}'>
                                             <td>
                                                 <div class="d-flex px-2 py-1">
                                                     
