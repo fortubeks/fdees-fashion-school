@@ -11,7 +11,6 @@
           <ul class="nav pink-3 navbar-nav">
             <li><a href="{{url('/')}}" class="dropdown-toggle">Home</a></li>
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
-            <li><a href="{{url('/admissions')}}" class="dropdown-toggle">Admissions</a></li>
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle active">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
                 <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
@@ -124,4 +123,12 @@
   <div class="clearfix"></div>
   <!-- end section -->
   @endsection
-  
+
+<script type="text/javascript" src="js/smart-forms/jquery.form.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/additional-methods.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/smart-form.js"></script> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="js/gmaps/jquery.gmap.js"></script> 
+<script type="text/javascript" src="js/gmaps/examples.js"></script> 
+<script src="js/scripts/functions.js" type="text/javascript"></script>

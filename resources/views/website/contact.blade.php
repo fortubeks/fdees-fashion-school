@@ -11,14 +11,11 @@
           <ul class="nav pink-3 navbar-nav">
             <li><a href="{{url('/')}}" class="dropdown-toggle">Home</a></li>
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
-            <li><a href="{{url('/admissions')}}" class="dropdown-toggle">Admissions</a></li>
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
                 <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
                 <li> <a href="{{url('/courses/')}}#intermediate">Intermediate</a> </li>
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
-                <li> <a href="{{url('/courses/')}}#manual">Manual Fashion Illustration</a> </li>
-                <li> <a href="{{url('/courses/')}}#digital">Digital Fashion Illustration</a> </li>
               </ul>
             </li>
             <li><a href="#" class="dropdown-toggle">Gallery</a></li>
@@ -30,6 +27,18 @@
     </div>
   </div>
   <!--end menu-->
+  <div class="clearfix"></div>
+
+  <section>
+    <div class="header-inner two">
+      <div class="inner text-center">
+        <h4 class="title text-white uppercase">We Are Hasta</h4>
+        <h5 class="text-white uppercase">Get Many More Features</h5>
+      </div>
+      <div class="overlay bg-opacity-5"></div>
+      <img src="http://placehold.it/1920x800" alt="" class="img-responsive"/> </div>
+  </section>
+  <!-- end header inner -->
   <div class="clearfix"></div>
   
   <section>
@@ -55,7 +64,7 @@
         <div class="col-md-8">
           <div class="smart-forms bmargin">
             <h3 class=" roboto-slab">Contact Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit consectetuer adipiscing elit. Suspendisse et justo. augue.</p>
+            <p>Fill in the form below and we will get back to you soonest.</p>
             <br/>
             <br/>
             <form method="post" action="#" id="smart-form">

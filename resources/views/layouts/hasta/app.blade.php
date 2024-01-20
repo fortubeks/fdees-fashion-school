@@ -37,7 +37,8 @@
         <link rel="stylesheet" href="css/et-line-font/et-line-font.css">
         <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="js/tabs/assets/css/responsive-tabs.css">
-
+        <link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
+        <link rel="stylesheet" type="text/css" href="js/smart-forms/smart-forms.css">
 
 
         <!-- Remove the below comments to use your color option -->
@@ -82,9 +83,9 @@
                 <div class="col-md-7 col-centered text-center">
                 <h3 class="less-mar3 roboto-slab text-white text-center font-weight-3">Fdees Fashion Academy</h3>
                 <br/>
-                <p class="text-white">Ready to make your mark in the world of fashion? Apply now and join a community of aspiring designers, marketers, and innovators.</p>
+                <p class="text-white">Ready to make your mark in the world of fashion? a community of forward-thinkers and trailblazers who will shape the future of fashion</p>
                 <br/>
-                <a class="btn btn-border white btn-large" href="#">Apply now</a> </div>
+                <a class="btn btn-border white btn-large" href="{{url('/student-register')}}">Register now</a> </div>
             </div>
             </div>
         </section>
@@ -218,6 +219,8 @@
         <script src="js/scrolltotop/totop.js"></script> 
         <script src="js/mainmenu/jquery.sticky.js"></script> 
         
+        <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script> 
+        <script type="text/javascript" src="js/cubeportfolio/main.js"></script> 
         <script src="js/scripts/functions.js" type="text/javascript"></script>
     </body>
 </html>

@@ -23,9 +23,9 @@ class WebsiteController extends Controller
     {
         return view('website.about');
     }
-    public function admissions()
+    public function gallery()
     {
-        return view('website.admissions');
+        return view('website.gallery');
     }
     public function showStudentRegistrationForm()
     {

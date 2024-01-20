@@ -12,7 +12,6 @@
           <ul class="nav pink-3 navbar-nav">
             <li><a href="{{url('/')}}" class="dropdown-toggle active">Home</a></li>
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
-            <li><a href="{{url('/admissions')}}" class="dropdown-toggle">Admissions</a></li>
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
                 <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
@@ -56,6 +55,7 @@
 			data-effect="right(250)"> experienced <span>learning</span></h3>
             
       <a class="ms-layer sbut18"
+      href="{{url('/courses')}}"
 			style="left: 230px; top: 380px;"
 			data-type="text"
 			data-delay="1500"
@@ -63,8 +63,8 @@
 			data-duration="1200"
 			data-effect="right(250)"> Read more </a> 
             
-            <a class="ms-layer sbut19"
-            href="{{url('/student-register')}}"
+      <a class="ms-layer sbut19"
+      href="{{url('/student-register')}}"
 			style="left: 390px; top: 380px;"
 			data-type="text"
 			data-delay="2000"
@@ -274,120 +274,6 @@
   <!--end section-->
   <div class="clearfix"></div>
   
-  <section style="display: none;" class="sec-padding">
-    <div class="container">
-      <div class="row slide-controls-color-8">
-        <div class="col-md-6">
-          <h3 class=" roboto-slab uppercase less-mar3">Latest News</h3>
-          <div class="title-line-9 less-margin align-center"></div>
-          <div class="clearfix"></div>
-          <br/>
-          <div id="owl-demo3" class="owl-carousel">
-            <div class="item">
-              <div class="feature-box-82 bmargin">
-                <div class="col-md-6 nopadding"> <a href="#">
-                  <div class="image-holder">
-                    <div class="post-info">
-                      <div class="post-infoicon"><i class="fa fa-heart"></i> 5</div>
-                      <div class="post-infoicon"><i class="fa fa-comment"></i> 20</div>
-                      <div class="post-infoicon"><i class="fa fa-share"></i> Share</div>
-                    </div>
-                    <img src="http://placehold.it/1000x1000" alt="" class="img-responsive"/> </div>
-                  </a> </div>
-                <div class="col-md-6">
-                  <div class="text-box padding-3">
-                    <h5 class="uppercase roboto-slab font-weight-4"><a href="#">Science Blog</a></h5>
-                    <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15</span> </div>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis.</p>
-                  </div>
-                </div>
-              </div>
-              <!--end item-->
-              <div class="col-divider-margin-3"></div>
-              <div class="feature-box-82 active bmargin">
-                <div class="col-md-6 nopadding"> <a href="#">
-                  <div class="image-holder">
-                    <div class="post-info">
-                      <div class="post-infoicon"><i class="fa fa-heart"></i> 5</div>
-                      <div class="post-infoicon"><i class="fa fa-comment"></i> 20</div>
-                      <div class="post-infoicon"><i class="fa fa-share"></i> Share</div>
-                    </div>
-                    <img src="http://placehold.it/1000x1000" alt="" class="img-responsive"/> </div>
-                  </a> </div>
-                <div class="col-md-6">
-                  <div class="text-box padding-3">
-                    <h5 class="uppercase roboto-slab font-weight-4"><a href="#">Library</a></h5>
-                    <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15</span> </div>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis.</p>
-                  </div>
-                </div>
-              </div>
-              <!--end item--> 
-              
-            </div>
-            <!--end slide item-->
-            
-            <div class="item">
-              <div class="feature-box-82 bmargin">
-                <div class="col-md-6 nopadding"> <a href="#">
-                  <div class="image-holder">
-                    <div class="post-info">
-                      <div class="post-infoicon"><i class="fa fa-heart"></i> 5</div>
-                      <div class="post-infoicon"><i class="fa fa-comment"></i> 20</div>
-                      <div class="post-infoicon"><i class="fa fa-share"></i> Share</div>
-                    </div>
-                    <img src="http://placehold.it/1000x1000" alt="" class="img-responsive"/> </div>
-                  </a> </div>
-                <div class="col-md-6">
-                  <div class="text-box padding-3">
-                    <h5 class="uppercase roboto-slab font-weight-4"><a href="#">Science Blog</a></h5>
-                    <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15</span> </div>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis.</p>
-                  </div>
-                </div>
-              </div>
-              <!--end item-->
-              
-              <div class="feature-box-82 active bmargin">
-                <div class="col-md-6 nopadding"> <a href="#">
-                  <div class="image-holder">
-                    <div class="post-info">
-                      <div class="post-infoicon"><i class="fa fa-heart"></i> 5</div>
-                      <div class="post-infoicon"><i class="fa fa-comment"></i> 20</div>
-                      <div class="post-infoicon"><i class="fa fa-share"></i> Share</div>
-                    </div>
-                    <img src="http://placehold.it/1000x1000" alt="" class="img-responsive"/> </div>
-                  </a> </div>
-                <div class="col-md-6">
-                  <div class="text-box padding-3">
-                    <h5 class="uppercase roboto-slab font-weight-4"><a href="#">Library</a></h5>
-                    <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15</span> </div>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis.</p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-              <!--end item--> 
-              
-            </div>
-            <!--end slide item--> 
-            
-          </div>
-          <!--end carousel--> 
-          
-        </div>
-        <!--end item-->
-        
-        
-      </div>
-    </div>
-  </section>
-  <!-- end section -->
-  <div class="clearfix"></div>
   
   <section class="parallax-section58">
     <div class="section-overlay bg-opacity-7">
