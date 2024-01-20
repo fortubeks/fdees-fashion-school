@@ -18,7 +18,7 @@
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
               </ul>
             </li>
-            <li><a href="#" class="dropdown-toggle">Gallery</a></li>
+            <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
             <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle">Contact</a></li>
           </ul>
@@ -36,7 +36,7 @@
         <h5 class="text-white uppercase"></h5>
       </div>
       <div class="overlay bg-opacity-5"></div>
-      <img src="{{url('/images/bg-1.jpg')}}" alt="" class="img-responsive"/> </div>
+      <img src="{{url('/images/bg-2.jpg')}}" alt="" class="img-responsive"/> </div>
   </section>
   <!-- end header inner -->
   <div class="clearfix"></div>
@@ -92,7 +92,7 @@ At Fdees Fashion Academy, we believe that fashion is not just about clothing - i
         </div>
         <!--end item-->
         
-        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-1.jpg')}}" alt="" class="img-responsive"/></a> <br/>
+        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-3.jpg')}}" alt="" class="img-responsive"/></a> <br/>
           <h4 class="uppercase roboto-slab font-weight-3"><a href="#">Holistic Education</a></h4>
           <p>We go beyond traditional teaching methods, offering a holistic approach that integrates creativity, technology, and business acumen. Our students graduate with a well-rounded skill set, ready to thrive in the diverse landscape of the fashion world.</p>
         </div>
@@ -102,19 +102,19 @@ At Fdees Fashion Academy, we believe that fashion is not just about clothing - i
         <div class="col-divider-margin-4"></div>
         <div class="divider-line solid light opacity-7"></div>
         <div class="col-divider-margin-4"></div>
-        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-1.jpg')}}" alt="" class="img-responsive"/></a> <br/>
+        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-4.jpg')}}" alt="" class="img-responsive"/></a> <br/>
           <h4 class="uppercase roboto-slab font-weight-3"><a href="#">Expert Faculty</a></h4>
           <p>Learn from seasoned professionals and industry experts who bring a wealth of experience to the classroom. Our faculty is dedicated to fostering a supportive learning environment where innovation and originality are celebrated.</p>
         </div>
         <!--end item-->
         
-        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-1.jpg')}}" alt="" class="img-responsive"/></a> <br/>
+        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-5.jpg')}}" alt="" class="img-responsive"/></a> <br/>
           <h4 class="uppercase roboto-slab font-weight-3"><a href="#">State-of-the-art Facilities</a></h4>
           <p>Immerse yourself in a space designed to inspire. Our state-of-the-art facilities provide the perfect canvas for your creative endeavors, from cutting-edge design studios to collaborative workspaces.</p>
         </div>
         <!--end item-->
         
-        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/></a> <br/>
+        <div class="col-md-4 col-sm-6 col-xs-12 bmargin"> <a href="#"><img src="{{url('/images/about-6.jpg')}}" alt="" class="img-responsive"/></a> <br/>
           <h4 class="uppercase roboto-slab font-weight-3"><a href="#">Global Perspective</a></h4>
           <p>Embrace a global perspective with a curriculum that reflects the international nature of the fashion industry. We encourage our students to think globally, ensuring they're well-prepared for the demands of an interconnected world.</p>
         </div>

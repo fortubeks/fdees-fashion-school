@@ -18,7 +18,7 @@
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
               </ul>
             </li>
-            <li><a href="#" class="dropdown-toggle">Gallery</a></li>
+            <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
             <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle">Contact</a></li>
           </ul>

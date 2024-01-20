@@ -11,14 +11,14 @@
           <ul class="nav pink-3 navbar-nav">
             <li><a href="{{url('/')}}" class="dropdown-toggle">Home</a></li>
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
-            <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle active">Courses +</a>
+            <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle ">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
                 <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
                 <li> <a href="{{url('/courses/')}}#intermediate">Intermediate</a> </li>
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
               </ul>
             </li>
-            <li><a href="#" class="dropdown-toggle">Gallery</a></li>
+            <li><a href="{{url('/gallery')}}" class="dropdown-toggle active">Gallery</a></li>
             <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle">Contact</a></li>
           </ul>
@@ -32,11 +32,9 @@
   <section>
     <div class="header-inner two">
       <div class="inner text-center">
-        <h4 class="title text-white uppercase">We Are Hasta</h4>
-        <h5 class="text-white uppercase">Get Many More Features</h5>
       </div>
       <div class="overlay bg-opacity-5"></div>
-      <img src="http://placehold.it/1920x800" alt="" class="img-responsive"/> </div>
+      <img src="{{url('/images/bg-2.jpg')}}" alt="" class="img-responsive"/> </div>
   </section>
   <!-- end header inner -->
   <div class="clearfix"></div>
@@ -49,7 +47,7 @@
             <h3>Gallery</h3>
           </div>
           <div class="col-md-6 text-right">
-            <div class="pagenation_links"><a href="index.html">Home</a><i> / </i> Gallery</div>
+            <div class="pagenation_links"><a href="{{url('/')}}">Home</a><i> / </i> Gallery</div>
           </div>
         </div>
       </div>
@@ -70,19 +68,19 @@
       <div class="row">
         <div class="demo-full-width">
           <div id="grid-container" class="cbp">
-            <div class="cbp-item identity logos"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Suspendisse Imperdiet<br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item identity logos"> <a href="{{url('/images/gallery/gallery-1.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Suspendisse Imperdiet<br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-1.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Suspendisse Imperdiet </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                    <div class="cbp-l-caption-title">Enter Greatness </div>
+                    <div class="cbp-l-caption-desc">Enter Fdees Fashion Academy</div>
                   </div>
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item web-design"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Magna Tempus Urna<br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item web-design"> <a href="{{url('/images/gallery/gallery-2.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Magna Tempus Urna<br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-2.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -92,8 +90,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item motion identity"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="World Clock Widget<br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item motion identity"> <a href="{{url('/images/gallery/gallery-3.jpg')}}" class="cbp-caption cbp-lightbox" data-title="World Clock Widget<br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-3.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -103,8 +101,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item identity graphic"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Quisque Ornare <br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item identity graphic"> <a href="{{url('/images/gallery/gallery-4.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Quisque Ornare <br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-4.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -114,8 +112,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item motion logos"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Skateshop Website<br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item motion logos"> <a href="{{url('/images/gallery/gallery-5.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Skateshop Website<br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-5.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -125,8 +123,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item web-design"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Donec Dapibus Placerat <br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item web-design"> <a href="{{url('/images/gallery/gallery-6.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Donec Dapibus Placerat <br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-6.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -136,8 +134,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item identity motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Mauris non Quam ac eros<br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item identity motion"> <a href="{{url('/images/gallery/gallery-7.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Mauris non Quam ac eros<br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-7.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
@@ -147,8 +145,8 @@
                 </div>
               </div>
               </a> </div>
-            <div class="cbp-item web-design graphic"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Vivamus Vulputate <br>by Codelayers">
-              <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+            <div class="cbp-item web-design graphic"> <a href="{{url('/images/gallery/gallery-8.jpg')}}" class="cbp-caption cbp-lightbox" data-title="Vivamus Vulputate <br>by Codelayers">
+              <div class="cbp-caption-defaultWrap"> <img src="{{url('/images/gallery/gallery-8.jpg')}}" alt=""> </div>
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">

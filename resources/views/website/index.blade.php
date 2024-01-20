@@ -98,6 +98,7 @@
 			data-effect="right(250)"> experienced <span>learning</span></h3>
             
       <a class="ms-layer sbut18"
+      href="{{url('/about')}}"
 			style="left: 660px; top: 360px;"
 			data-type="text"
 			data-delay="1500"
@@ -139,6 +140,7 @@
 			data-effect="right(250)"> experienced <span>learning</span></h3>
             
       <a class="ms-layer sbut18"
+      href="{{url('/courses')}}"
 			style="left: 660px; top: 360px;"
 			data-type="text"
 			data-delay="1500"
@@ -239,7 +241,7 @@
             <br/>
             <p>Each student is unique, and our faculty recognizes the individual strengths and aspirations of every student. Our personalized mentorship program connects students with experienced professionals who provide guidance, support, and insights tailored to each student's journey. </p>
             <br/>
-            <a href="#" class="read-more pink-3"><i class="fa fa-angle-double-right"></i> Read More</a> </div>
+            <a href="{{url('/about')}}" class="read-more pink-3"><i class="fa fa-angle-double-right"></i> Read More</a> </div>
           <!--end item-->
           
           <div class="col-md-6 col-sm-6 bmargin">
@@ -284,7 +286,7 @@
             <br/>
             <p class="text-white">Discover a fashion school that believes in unleashing the boundless potential of creative minds. At Fdees Fashion Academy, our approach is not just about education; it's about fostering a community of forward-thinkers and trailblazers who will shape the future of fashion.</p>
             <br/>
-            <a class="btn btn-pink-3 btn-round" href="#">Read more</a> <br/>
+            <a class="btn btn-pink-3 btn-round" href="{{url('/about')}}">Read more</a> <br/>
           </div>
         </div>
       </div>
@@ -310,7 +312,7 @@
             <h5 class="uppercase oswald font-weight-3 text-pink-3">Global Perspective</h5>
             <p>Embrace a global perspective with a curriculum that reflects the international nature of the fashion industry. We encourage our students to think globally, ensuring they're well-prepared for the demands of an interconnected world.</p>
             <br/>
-            <a class="read-more pink-3" href="#">Read More <i class="fa fa-angle-double-right"></i></a></div>
+            <a class="read-more pink-3" href="{{url('/courses')}}">Read More <i class="fa fa-angle-double-right"></i></a></div>
         </div>
         <!--end item-->
         
@@ -338,8 +340,8 @@
                 <div class="feature-box24 bmargin">
                   <div class="inner"> <br/>
                     <br/>
-                    <h4 class="text-white uppercase oswald font-weight-3">Vivamus et justo in nunc </h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <h4 class="text-white uppercase oswald font-weight-3">Our Students </h4>
+                    <p class="text-white">Come join our community of creators</p>
                     <br/>
                   </div>
                   <div class="image-holder">
@@ -351,8 +353,8 @@
                 <div class="feature-box24 bmargin">
                   <div class="inner"> <br/>
                     <br/>
-                    <h4 class="text-white uppercase oswald font-weight-3">Vivamus et justo in nunc </h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <h4 class="text-white uppercase oswald font-weight-3">Condusive atmosphere </h4>
+                    <p class="text-white">Best facilities in a condusive atmosphere</p>
                     <br/>
                   </div>
                   <div class="image-holder">
@@ -363,37 +365,7 @@
             </div>
           </div>
         </div>
-        <div style="display: none;" class="col-md-4 col-sm-6 last">
-          <h4 class=" roboto-slab uppercase less-mar3">Features</h4>
-          <div class="title-line-9 less-margin align-center"></div>
-          <br/>
-          <br/>
-          <div class="item-holder">
-            <div class="accordion_holder">
-              <div class="accordion_example1"> 
-                
-                <!-- Section 1 -->
-                <div class="accordion_in two st3 acc_active">
-                  <div class="acc_head">student learning opportunities</div>
-                  <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. </div>
-                </div>
-                
-                <!-- Section 2 -->
-                <div class="accordion_in two st3">
-                  <div class="acc_head">Student storys</div>
-                  <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. </div>
-                </div>
-                
-                <!-- Section 3 -->
-                <div class="accordion_in two st3">
-                  <div class="acc_head">New courses</div>
-                  <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Accordion end --> 
-        </div>
+        
       </div>
     </div>
   </section>

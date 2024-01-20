@@ -18,7 +18,7 @@
                 <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
               </ul>
             </li>
-            <li><a href="#" class="dropdown-toggle">Gallery</a></li>
+            <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
             <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle active">Contact</a></li>
           </ul>
@@ -32,11 +32,9 @@
   <section>
     <div class="header-inner two">
       <div class="inner text-center">
-        <h4 class="title text-white uppercase">We Are Hasta</h4>
-        <h5 class="text-white uppercase">Get Many More Features</h5>
       </div>
       <div class="overlay bg-opacity-5"></div>
-      <img src="http://placehold.it/1920x800" alt="" class="img-responsive"/> </div>
+      <img src="{{url('/images/bg-2.jpg')}}" alt="" class="img-responsive"/> </div>
   </section>
   <!-- end header inner -->
   <div class="clearfix"></div>

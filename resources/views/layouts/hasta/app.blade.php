@@ -100,8 +100,8 @@
                 <div class="clearfix"></div>
                 <div class="footer-title-bottomstrip"></div>
                 <ul class="usefull-links no-border">
-                    <li><a href="#"><i class="fa fa-angle-right"></i> About the academy</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Our approach</a></li>
+                    <li><a href="{{url('/about')}}"><i class="fa fa-angle-right"></i> About the academy</a></li>
+                    <li><a href="{{url('/about')}}"><i class="fa fa-angle-right"></i> Our approach</a></li>
                 </ul>
                 </div>
                 <!--end item-->
@@ -134,9 +134,9 @@
                 <div class="clearfix"></div>
                 <div class="footer-title-bottomstrip"></div>
                 <ul class="usefull-links no-border">
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Beginner</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Intermediate</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> Advanced</a></li>
+                    <li><a href="{{url('/courses/#beginner')}}"><i class="fa fa-angle-right"></i> Beginner</a></li>
+                    <li><a href="{{url('/courses/#intermediate')}}"><i class="fa fa-angle-right"></i> Intermediate</a></li>
+                    <li><a href="{{url('/courses/#advanced')}}"><i class="fa fa-angle-right"></i> Advanced</a></li>
                 </ul>
                 </div>
                 <!--end item-->
