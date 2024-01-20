@@ -214,7 +214,7 @@
               <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Advanced<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
               </div>
-              <img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/> </div>
+              <img src="{{url('/images/about-3.jpg')}}" alt="" class="img-responsive"/> </div>
             </a> </div>
           <!--end item-->
           

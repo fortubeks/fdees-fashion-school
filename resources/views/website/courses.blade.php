@@ -53,7 +53,7 @@
           <div class="col-md-6 bmargin nopadding"><img src="{{url('/images/courses-beginner.jpg')}}" alt="" class="img-responsive"/></div>
           <div class="col-md-6 bmargin">
             <div class="text-box padding-3">
-              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Beginner)</h4>
+              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Beginner) - ₦ 450,000</h4>
               <p><b>Aim of the Module:</b> To enable individual create apparel or custom patterns with respective 
                 final finishing, according to the clothing requirements.</p>
               <p><b>  Duration:</b> 3 Months 
@@ -75,7 +75,7 @@
           <div class="col-md-6 bmargin nopadding"><img src="{{url('/images/courses-intermediate.jpg')}}" alt="" class="img-responsive"/></div>
           <div class="col-md-6 bmargin">
             <div class="text-box padding-3">
-              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Intermediate)</h4>
+              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Intermediate) - ₦ 350,000</h4>
               <p><b>Aim of the Module:</b> To enable individual create apparel or custom patterns with respective 
                 final finishing, according to the clothing requirements.</p>
               <p><b>  Duration:</b> 3 Months 
@@ -97,7 +97,7 @@
           <div class="col-md-6 bmargin nopadding"><img src="{{url('/images/courses-advanced.jpg')}}" alt="" class="img-responsive"/></div>
           <div class="col-md-6 bmargin">
             <div class="text-box padding-3">
-              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Advanced)</h4>
+              <h4 class="roboto-slab font-weight-4">3 Months Fashion Designing Course (Advanced) - ₦ 300,000</h4>
               <p><b>Aim of the Module:</b> To enable individual create apparel or custom patterns with respective 
                 final finishing, according to the clothing requirements.</p>
               <p><b>Requirements:</b> Students must have completed our intermediate course or have completed a 
