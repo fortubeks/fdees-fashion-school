@@ -13,9 +13,9 @@
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle active">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
-                <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
-                <li> <a href="{{url('/courses/')}}#intermediate">Intermediate</a> </li>
-                <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
+                <li> <a href="{{url('/courses-beginner')}}">Beginner</a> </li>
+                <li> <a href="{{url('/courses-intermediate')}}">Intermediate</a> </li>
+                <li> <a href="{{url('/courses-advanced')}}">Advanced</a> </li>
               </ul>
             </li>
             <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
@@ -63,7 +63,7 @@
                 <li><i class="fa fa-check"></i> Garment Construction </li>
               </ul>
               <br/>
-              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="#">Learn more</a>
+              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-beginner')}}">Learn more</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
                 <li><i class="fa fa-check"></i> Garment Construction </li>
               </ul>
               <br/>
-              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="#">Learn more</a>
+              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-intermediate')}}">Learn more</a>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@
                 <li><i class="fa fa-check"></i> Garment Construction </li>
               </ul>
               <br/>
-              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="#">Learn more</a>
+              <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-advanced')}}">Learn more</a>
             </div>
           </div>
         </div>
@@ -123,8 +123,7 @@
   <div class="clearfix"></div>
   <!-- end section -->
   @endsection
-
-<script type="text/javascript" src="js/smart-forms/jquery.form.min.js"></script> 
+  <script type="text/javascript" src="js/smart-forms/jquery.form.min.js"></script> 
 <script type="text/javascript" src="js/smart-forms/jquery.validate.min.js"></script> 
 <script type="text/javascript" src="js/smart-forms/additional-methods.min.js"></script> 
 <script type="text/javascript" src="js/smart-forms/smart-form.js"></script> 

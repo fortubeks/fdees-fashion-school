@@ -15,6 +15,18 @@ class WebsiteController extends Controller
     {
         return view('website.courses');
     }
+    public function coursesBeginner()
+    {
+        return view('website.courses-beginner');
+    }
+    public function coursesIntermediate()
+    {
+        return view('website.courses-intermediate');
+    }
+    public function coursesAdvanced()
+    {
+        return view('website.courses-advanced');
+    }
     public function contact()
     {
         return view('website.contact');

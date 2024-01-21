@@ -13,9 +13,9 @@
             <li><a href="{{url('/about')}}" class="dropdown-toggle">About</a></li>
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
-                <li> <a href="{{url('/courses/')}}#beginner">Beginner</a> </li>
-                <li> <a href="{{url('/courses/')}}#intermediate">Intermediate</a> </li>
-                <li> <a href="{{url('/courses/')}}#advanced">Advanced</a> </li>
+                <li> <a href="{{url('/courses-beginner')}}">Beginner</a> </li>
+                <li> <a href="{{url('/courses-intermediate')}}">Intermediate</a> </li>
+                <li> <a href="{{url('/courses-advanced')}}">Advanced</a> </li>
               </ul>
             </li>
             <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>

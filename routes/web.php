@@ -28,6 +28,9 @@ Route::get('/courses', [App\Http\Controllers\WebsiteController::class, 'courses'
 Route::get('/contact', [App\Http\Controllers\WebsiteController::class, 'contact']);
 Route::get('/about', [App\Http\Controllers\WebsiteController::class, 'about']);
 Route::get('/gallery', [App\Http\Controllers\WebsiteController::class, 'gallery']);
+Route::get('/courses-beginner', [App\Http\Controllers\WebsiteController::class, 'coursesBeginner']);
+Route::get('/courses-intermediate', [App\Http\Controllers\WebsiteController::class, 'coursesIntermediate']);
+Route::get('/courses-advanced', [App\Http\Controllers\WebsiteController::class, 'coursesAdvanced']);
 
 Route::get('/student-register', [App\Http\Controllers\WebsiteController::class, 'showStudentRegistrationForm']);
 Route::post('/student-register', [App\Http\Controllers\StudentController::class, 'registerStudent']);
