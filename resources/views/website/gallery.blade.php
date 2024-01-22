@@ -84,8 +84,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Magna Tempus Urna</div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                    <div class="cbp-l-caption-title">Our Instructors</div>
+                    <div class="cbp-l-caption-desc">highly dedicated</div>
                   </div>
                 </div>
               </div>
@@ -95,8 +95,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Maecenas Sed </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                    <div class="cbp-l-caption-title">Individual Trainings </div>
+                    <div class="cbp-l-caption-desc">One on One</div>
                   </div>
                 </div>
               </div>
@@ -106,8 +106,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Quisque Ornare </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                  <div class="cbp-l-caption-title">Individual Trainings </div>
+                    <div class="cbp-l-caption-desc">One on One</div>
                   </div>
                 </div>
               </div>
@@ -117,8 +117,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Hendrerit Condimentum</div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                    <div class="cbp-l-caption-title">Condusive environment</div>
+                    <div class="cbp-l-caption-desc">Fdees academy</div>
                   </div>
                 </div>
               </div>
@@ -128,8 +128,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Donec Dapibus Placerat </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                  <div class="cbp-l-caption-title">Condusive environment</div>
+                    <div class="cbp-l-caption-desc">Fdees academy</div>
                   </div>
                 </div>
               </div>
@@ -139,8 +139,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Mauris non Quam ac eros </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                  <div class="cbp-l-caption-title">Condusive environment</div>
+                    <div class="cbp-l-caption-desc">Fdees academy</div>
                   </div>
                 </div>
               </div>
@@ -150,8 +150,8 @@
               <div class="cbp-caption-activeWrap">
                 <div class="cbp-l-caption-alignLeft">
                   <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Vivamus Vulputate </div>
-                    <div class="cbp-l-caption-desc">by Codelayers</div>
+                  <div class="cbp-l-caption-title">Condusive environment</div>
+                    <div class="cbp-l-caption-desc">Fdees academy</div>
                   </div>
                 </div>
               </div>
