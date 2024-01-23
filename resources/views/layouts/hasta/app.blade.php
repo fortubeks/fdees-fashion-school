@@ -134,9 +134,9 @@
                 <div class="clearfix"></div>
                 <div class="footer-title-bottomstrip"></div>
                 <ul class="usefull-links no-border">
-                    <li><a href="{{url('/courses/#beginner')}}"><i class="fa fa-angle-right"></i> Beginner</a></li>
-                    <li><a href="{{url('/courses/#intermediate')}}"><i class="fa fa-angle-right"></i> Intermediate</a></li>
-                    <li><a href="{{url('/courses/#advanced')}}"><i class="fa fa-angle-right"></i> Advanced</a></li>
+                    <li><a href="{{url('/courses-beginner')}}"><i class="fa fa-angle-right"></i> Beginner</a></li>
+                    <li><a href="{{url('/courses-intermediate')}}"><i class="fa fa-angle-right"></i> Intermediate</a></li>
+                    <li><a href="{{url('/courses-advanced')}}"><i class="fa fa-angle-right"></i> Advanced</a></li>
                 </ul>
                 </div>
                 <!--end item-->
@@ -222,6 +222,14 @@
         <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script> 
         <script type="text/javascript" src="js/cubeportfolio/main.js"></script> 
         <script src="js/scripts/functions.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/smart-forms/jquery.form.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/additional-methods.min.js"></script> 
+<script type="text/javascript" src="js/smart-forms/smart-form.js"></script> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="js/gmaps/jquery.gmap.js"></script> 
+<script type="text/javascript" src="js/gmaps/examples.js"></script> 
     </body>
 </html>
 

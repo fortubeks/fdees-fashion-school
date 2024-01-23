@@ -19,7 +19,6 @@
               </ul>
             </li>
             <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
-            <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle">Contact</a></li>
           </ul>
         </div>
@@ -57,10 +56,11 @@
               <p><b>Aim of the Module:</b> To enable individual create apparel or custom patterns with respective 
                 final finishing, according to the clothing requirements.</p>
               <p><b>  Duration:</b> 3 Months 
-              <p><b>  Subjects:</b></p>
+              <p><b>  Courses:</b></p>
               <ul class="iconlist dark">
                 <li><i class="fa fa-check"></i> Pattern Making </li>
                 <li><i class="fa fa-check"></i> Garment Construction </li>
+                <li><i class="fa fa-check"></i> Manual Fashion Illustration </li>
               </ul>
               <br/>
               <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-beginner')}}">Learn more</a>
@@ -79,10 +79,11 @@
               <p><b>Aim of the Module:</b> To enable individual create apparel or custom patterns with respective 
                 final finishing, according to the clothing requirements.</p>
               <p><b>  Duration:</b> 3 Months 
-              <p><b>  Subjects:</b></p>
+              <p><b>  Courses:</b></p>
               <ul class="iconlist dark">
                 <li><i class="fa fa-check"></i> Pattern Making </li>
                 <li><i class="fa fa-check"></i> Garment Construction </li>
+                <li><i class="fa fa-check"></i> Digital Fashion Illustration </li>
               </ul>
               <br/>
               <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-intermediate')}}">Learn more</a>
@@ -103,10 +104,11 @@
               <p><b>Requirements:</b> Students must have completed our intermediate course or have completed a 
                 course equivalent to our Intermediate course curriculum.</p>
               <p><b>  Duration:</b> 3 Months + 2 Months Internship
-              <p><b>  Subjects:</b></p>
+              <p><b>  Courses:</b></p>
               <ul class="iconlist dark">
                 <li><i class="fa fa-check"></i> Pattern Making </li>
                 <li><i class="fa fa-check"></i> Garment Construction </li>
+                <li><i class="fa fa-check"></i> Advanced Illustration (AI Fashion Rendering) </li>
               </ul>
               <br/>
               <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-advanced')}}">Learn more</a>
@@ -123,11 +125,4 @@
   <div class="clearfix"></div>
   <!-- end section -->
   @endsection
-  <script type="text/javascript" src="js/smart-forms/jquery.form.min.js"></script> 
-<script type="text/javascript" src="js/smart-forms/jquery.validate.min.js"></script> 
-<script type="text/javascript" src="js/smart-forms/additional-methods.min.js"></script> 
-<script type="text/javascript" src="js/smart-forms/smart-form.js"></script> 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript" src="js/gmaps/jquery.gmap.js"></script> 
-<script type="text/javascript" src="js/gmaps/examples.js"></script> 
-<script src="js/scripts/functions.js" type="text/javascript"></script>
+  

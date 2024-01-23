@@ -19,7 +19,6 @@
               </ul>
             </li>
             <li><a href="{{url('/gallery')}}" class="dropdown-toggle">Gallery</a></li>
-            <li><a href="#" class="dropdown-toggle">Blog</a></li>
             <li><a href="{{url('/contact')}}" class="dropdown-toggle active">Contact</a></li>
           </ul>
         </div>
@@ -132,10 +131,10 @@
         <div class="col-md-4 bmargin">
           <h3 class="roboto-slab">Address Info</h3>
 
-          <h6><strong>Company Name</strong></h6>
+          <h6><strong>Fdees Fashion Academy</strong></h6>
           No. 1 Audu Bako way Nassarawa GRA opposite Hospital Road Kano <br />
           Telephone: 0809 901 9989<br />
-          E-mail: <a href="mailto:hello@fdeesfashionacademy.com">hello@fdeesfashionacademy.com</a><br />
+          E-mail: <a href="mailto:fdeesfashionhouse@gmail.com">fdeesfashionhouse@gmail.com</a><br />
           <div class="clearfix"></div>
           <br/>
           <h3 class="roboto-slab">Find the Address</h3>
