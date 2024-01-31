@@ -63,8 +63,7 @@
                                     </div>
                                     <div class="col-4">
                                         <label for="middle_name">Date of Birth</label>
-                                        <input type="text" name="date_of_birth" id="middle_name"
-                                            value="{{ old('date_of_birth', '') }}" class="form-control">
+                                        <input type="date" name="date_of_birth" class="form-control">
                                         @error('date_of_birth')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
