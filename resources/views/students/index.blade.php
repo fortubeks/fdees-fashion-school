@@ -3,7 +3,7 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-app.navbar />
         <div class="container-fluid py-4 px-5">
-            
+        
             <div class="row">
                 <div class="col-12">
                     <div class="card border shadow-xs mb-4">
@@ -34,13 +34,13 @@
                             <div class="border-bottom py-3 px-3 d-sm-flex align-items-center">
                                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable1"
-                                        autocomplete="off" checked>
+                                        autocomplete="off">
                                     <label class="btn btn-white px-3 mb-0" for="btnradiotable1">All</label>
                                     <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable2"
                                         autocomplete="off">
                                     <label class="btn btn-white px-3 mb-0" for="btnradiotable2">Enrolled</label>
                                     <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable3"
-                                        autocomplete="off">
+                                        autocomplete="off" checked>
                                     <label class="btn btn-white px-3 mb-0" for="btnradiotable3">UnEnrolled</label>
                                 </div>
                                 <div class="input-group w-sm-25 ms-auto">

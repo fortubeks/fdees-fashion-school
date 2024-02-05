@@ -25,6 +25,7 @@ class StudentController extends Controller
             session()->put('student',$student);
             return redirect('student-enroll')->with('status','Student details saved successfully');
         }
+        session()->flash('success','Success');
         return redirect('students')->with('status','Student added successfully');
     }
 
@@ -37,12 +38,16 @@ class StudentController extends Controller
     public function update(Request $request, Student $student)
     {
         $student->update($request->all());
+        session()->flash('success','Success');
         return redirect('students/'.$student->id)->with('success','Student updated successfully');
     }
 
     public function destroy(Student $student)
     {
+        //first delete all enrollments
+        $student->enrollments()->delete();
         $student->delete();
+        session()->flash('success','Success');
         return redirect('students')->with('status','Student was deleted successfully');
     }
 

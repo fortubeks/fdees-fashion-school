@@ -69,6 +69,7 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
+@include('layouts.flash-message')
     @php
         $topSidenavArray = ['wallet', 'profile'];
         $topSidenavTransparent = ['signin', 'signup'];
@@ -175,6 +176,7 @@
     <script src="{{env('APP_URL').'assets/js/plugins/perfect-scrollbar.min.js'}}"></script>
     <script src="{{env('APP_URL').'assets/js/plugins/smooth-scrollbar.min.js'}}"></script>
     <script src="{{env('APP_URL').'assets/js/plugins/chartjs.min.js'}}"></script>
+    <script type="text/javascript" src="{{env('APP_URL').'js/notify/notify.min.js'}}"></script> 
     <script src="{{env('APP_URL').'assets/js/plugins/swiper-bundle.min.js'}}" type="text/javascript"></script>
     
     <script>

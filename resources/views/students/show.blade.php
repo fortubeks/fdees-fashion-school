@@ -170,7 +170,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                
+                                <button type="button" class="mt-6 mb-0 btn btn-white btn-sm btn-delete">Delete</button>
                                 <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Update</button>
                             </div>
                         </div>
@@ -179,5 +179,18 @@
             </form>
         </div>
     </main>
-
+    <form class="d-none" id="form-delete" action="{{url('students/'.$student->id)}}" onsubmit="return confirm('Are you sure you want to delete this student and all their enrollments?');" method="post">
+    @method('Delete')
+    @csrf
+    </form>
 </x-app-layout>
+<script>
+window.addEventListener('load', function() {
+
+$('.btn-delete').click(function() {
+    $('#form-delete').submit()
+});
+
+});
+
+</script>
