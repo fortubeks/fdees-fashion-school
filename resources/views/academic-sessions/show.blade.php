@@ -2,8 +2,9 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-app.navbar />
         <div class="px-5 py-4 container-fluid ">
-            <form action="{{ url('academic-sessions') }}" method="POST">
+            <form action="{{ url('academic-sessions/'.$academic_session->id) }}" method="POST">
                 @csrf
+                @method('PUT')
                 <div class="row justify-content-center">
                     <div class="col-lg-9 col-12">
                         @if (session('error'))
@@ -22,20 +23,20 @@
                     <div class="col-lg-12 col-12 ">
                         <div class="card " id="basic-info">
                             <div class="card-header">
-                                <h5>Create new session</h5>
+                                <h5>Edit session</h5>
                             </div>
                             <div class="pt-0 card-body">
                                 <div class="row p-2">
                                     <div class="col-4">
                                         <label for="nationality">Start Date</label>
-                                        <input type="date" name="start_date" class="form-control">
+                                        <input type="date" name="start_date" value="{{$academic_session->start_date}}" class="form-control">
                                         @error('start_date')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
                                     <div class="col-4">
                                         <label for="state">End Date</label>
-                                        <input type="date" name="end_date" class="form-control">
+                                        <input type="date" name="end_date" value="{{$academic_session->end_date}}" class="form-control">
                                         @error('end_date')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
