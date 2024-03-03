@@ -7,6 +7,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Models\Student;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -117,3 +119,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('courses-admin', 'App\Http\Controllers\CourseController');
     Route::resource('academic-sessions', 'App\Http\Controllers\AcademicSessionController');
 });
+
+Route::get('/student-details', function (Request $request) {
+    return Student::find($request->student_id);
+})->middleware('auth');
+    

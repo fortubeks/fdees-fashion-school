@@ -2,7 +2,7 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-app.navbar />
         <div class="px-5 py-4 container-fluid ">
-            <form action="{{ url('students') }}" method="POST">
+            <form action="{{ url('enrollments') }}" method="POST">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-lg-9 col-12">
@@ -25,8 +25,19 @@
                                 <h5>Basic Info</h5>
                             </div>
                             <div class="pt-0 card-body">
-
-                                <div class="row">
+                                <div class="row p-2">
+                                    <div class="col-md-4">
+                                        <label for="customer" class="form-label">{{ __('Student') }}</label>
+                                        <input type="hidden" id="student_id" name="student_id">
+                                        <input required oninput="setStudentID()" class="form-control" list="customerdatalistOptions" id="student" placeholder="Type to search...">
+                                        <datalist id="customerdatalistOptions">
+                                            @foreach(getModelList('students') as $student)
+                                            <option value="{{$student->name()}}" data-value="{{$student->id}}">
+                                            @endforeach
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">First name</label>
                                         <input type="text" name="first_name" id="first_name"
@@ -52,10 +63,10 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">Phone Number</label>
-                                        <input type="text" name="phone" id="first_name"
+                                        <input type="text" name="phone" id="phone"
                                             value="{{ old('phone', '') }}" class="form-control">
                                         @error('phone')
                                             <span class="text-danger text-sm">{{ $message }}</span>
@@ -63,22 +74,11 @@
                                     </div>
                                     <div class="col-4">
                                         <label for="middle_name">Date of Birth</label>
-                                        <input type="text" name="date_of_birth" id="middle_name"
-                                            value="{{ old('date_of_birth', '') }}" class="form-control">
+                                        <input type="date" name="date_of_birth" id="date_of_birth" class="form-control">
                                         @error('date_of_birth')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    <div class="col-4">
-                                        <label for="sponsor">Sponsor name & phone</label>
-                                        <input type="text" name="sponsor" id="sponsor"
-                                            value="{{ old('sponsor', '') }}" class="form-control">
-                                        @error('sponsor')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="row p-2">
                                     <div class="col-4">
                                         <label for="name">Gender</label>
                                         <select name="gender" class="form-control">
@@ -89,99 +89,28 @@
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    <div class="col-4">
-                                        <label for="middle_name">Marital Status</label>
-                                        <select name="marital_status" class="form-control">
-                                            <option value="single">Single</option>
-                                            <option value="married">Married</option>
-                                        </select>
-                                        @error('marital_status')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="religion">Religion</label>
-                                        <select name="religion" class="form-control">
-                                            <option value="christianity">Christianity</option>
-                                            <option value="muslim">Muslim</option>
-                                        </select>
-                                        @error('religion')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
                                 </div>
-                                <div class="row p-2">
-                                    <div class="col-4">
-                                        <label for="name">Occupation</label>
-                                        <input type="text" name="occupation" id="occupation"
-                                            value="{{ old('occupation', '') }}" class="form-control">
-                                        @error('occupation')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="nationality">Nationality</label>
-                                        <select name="nationality" class="form-control">
-                                            <option value="Nigerian">Nigerian</option>
-                                            
-                                        </select>
-                                        @error('state')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="state">State</label>
-                                        <select name="state" class="form-control">
-                                            <option value="Abia">Abia</option>
-                                            <option value="Abuja">Abuja</option>
-                                        </select>
-                                        @error('state')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="row p-2">
+                                
+                                
+                                <div class="row">
                                     <div class="col-6">
-                                        <label for="name">Home Address</label>
-                                        <input type="text" name="home_address" id="home_address"
-                                            value="{{ old('home_address', '') }}" class="form-control">
-                                        @error('home_address')
+                                        <label for="name">Course</label>
+                                        <select name="course_id" id="course" class="form-control">
+                                            <option value="">--Select course--</option>
+                                            @foreach(getModelList('courses') as $course)
+                                            <option value="{{$course->id}}">{{$course->name.' (₦'.$course->cost.')'}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('location')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
+
                                     <div class="col-6">
-                                        <label for="name">Work Address</label>
-                                        <input type="text" name="work_address" id="work_address"
-                                            value="{{ old('work_address', '') }}" class="form-control">
-                                        @error('work_address')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="row p-2">
-                                    <div class="col-4">
-                                        <label for="name">Highest Qualification</label>
-                                        <select name="highest_qualification" class="form-control">
-                                            <option value="Bsc">Bsc</option>
+                                        <label for="middle_name">Session</label>
+                                        <select name="academic_session_id" id="academic_session" class="form-control">
                                         </select>
-                                        @error('highest_qualification')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="programme_registered">Programme Registered</label>
-                                        <select name="programme_registered" class="form-control">
-                                            <option value="Advanced Diploma">Advanced Diploma</option>
-                                        </select>
-                                        @error('programme_registered')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="last_name">Intended Date</label>
-                                        <input type="text" name="intended_date" id="intended_date"
-                                            value="{{ old('intended_date', '') }}" class="form-control">
-                                        @error('intended_date')
+                                        @error('academic_session')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -200,3 +129,45 @@
     </main>
 
 </x-app-layout>
+<script>
+window.addEventListener('load', function() {
+    $('#course').change(function() {
+    var course_id = $("#course").val();
+    $("#academic_session").empty();
+    let url = "{{url('/course-upcoming-sessions/')}}";
+    if(course_id != ''){
+        $.get(url, {course_id: course_id}, function(data,status){
+            if(data.length < 1){
+                alert('No available courses.')
+            }
+            jQuery.each(data, function(index, session){
+                    $("#academic_session").append("<option value='"+session.id+"'>Start date "+session.start_date+"</option>");
+                });
+        });
+    }
+    
+});
+});
+
+function setStudentID(){
+    var value = $('#student').val();
+    $('#student_id').val($('#customerdatalistOptions [value="' + value + '"]').data('value'));
+    var id = $('#student_id').val();
+    $.ajax({
+        url: "{{ url('/student-details') }}",
+        type: "GET",
+        data: {student_id: id},
+        success: function(data) {
+                // Do stuff when the AJAX call returns
+                //like refresh the basket
+                //alert(data.first_name);
+                //console.log(data);
+                $('#first_name').val(data.first_name);
+                $('#middle_name').val(data.middle_name);
+                $('#last_name').val(data.last_name);
+                $('#date_of_birth').val(data.date_of_birth);
+                $('#phone').val(data.phone);
+            }
+    })
+}
+</script>

@@ -17,7 +17,7 @@
                                     <button type="button" class="btn btn-sm btn-white me-2">
                                         View all
                                     </button>
-                                    <a href="{{url('students/create')}}" class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2">
+                                    <a href="{{url('enrollments/create')}}" class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2">
                                         <span class="btn-inner--icon">
                                             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24" fill="currentColor" class="d-block me-2">

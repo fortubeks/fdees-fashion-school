@@ -129,11 +129,10 @@
                                         @enderror
                                     </div>
                                     <div class="col-4">
-                                        <label for="state">State</label>
-                                        <select name="state" class="form-control">
-                                            <option value="Abia">Abia</option>
-                                            <option value="Abuja">Abuja</option>
-                                        </select>
+                                        <option>--Select State</option>
+                                        @foreach(getModelList('states') as $state)
+                                        <option value="{{$state->name}}">{{$state->name}}</option>
+                                        @endforeach
                                         @error('state')
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
@@ -167,23 +166,8 @@
                                             <span class="text-danger text-sm">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    <div class="col-4">
-                                        <label for="programme_registered">Programme Registered</label>
-                                        <select name="programme_registered" class="form-control">
-                                            <option value="Advanced Diploma">Advanced Diploma</option>
-                                        </select>
-                                        @error('programme_registered')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="last_name">Intended Date</label>
-                                        <input type="text" name="intended_date" id="intended_date"
-                                            value="{{ old('intended_date', '') }}" class="form-control">
-                                        @error('intended_date')
-                                            <span class="text-danger text-sm">{{ $message }}</span>
-                                        @enderror
-                                    </div>
+                                    
+                                    
                                 </div>
                                 
                                 <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Save

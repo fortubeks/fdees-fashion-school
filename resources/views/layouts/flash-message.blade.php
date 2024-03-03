@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
 
 @if ($errors->any())
 @foreach ($errors->all() as $error)
-$.notify("<?= $message ?>","danger");
+$.notify("<?= $error ?>","danger");
 @endforeach
 @endif
 

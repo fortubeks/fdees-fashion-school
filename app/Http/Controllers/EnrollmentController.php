@@ -26,7 +26,26 @@ class EnrollmentController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'student_id' => 'required',
+            'course_id' => 'required',
+            'academic_session_id' => 'required',
+        ]);
+    
+        // Check if the enrollment already exists
+        $existingEnrollment = Enrollment::where('student_id', $request->student_id)
+            ->where('course_id', $request->course_id)
+            ->where('academic_session_id', $request->academic_session_id)
+            ->exists();
+    
+        if ($existingEnrollment) {
+            session()->flash('error','Student is already enrolled in this course for the specified academic session');
+            return redirect('enrollments');
+        }
+    
+        // Create the new enrollment
         Enrollment::create($request->all());
+        session()->flash('success','Enrollment added successfully');
         return redirect('enrollments')->with('status','Enrollment added successfully');
     }
 
