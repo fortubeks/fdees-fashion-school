@@ -49,6 +49,15 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <form action="{{url('/enrollments/'.$enrollment->id)}}" method="post" onsubmit="return confirm('Are you sure you want remove this enrollment?'); ">
+                                        @csrf
+                                        @method('delete')
+                                    <button type="submit" class="mt-6 mb-0 btn btn-white btn-sm float-end">Delete Enrollment</button>
+                                    </form>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
