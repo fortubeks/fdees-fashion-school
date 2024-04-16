@@ -45,7 +45,7 @@ class AcademicSessionController extends Controller
 
     public function courseUpcomingSessions(Request $request){
         $course = Course::find($request->course_id);
-        $sessions = $course->academicSessions()->where('start_date', '>', now())->get();
+        $sessions = $course->academicSessions()->where('end_date', '>', now())->get();
         return $sessions;
     }
 
