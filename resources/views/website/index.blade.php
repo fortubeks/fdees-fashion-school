@@ -178,7 +178,7 @@
   <section class="sec-padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6 col-sm-6">
           <div class="feature-box-81 bmargin"> <a href="{{url('/courses#beginner')}}">
             <div class="image-holder">
               <div class="hover-strip">
@@ -193,20 +193,20 @@
         </div>
         <!--end item-->
         
-        <div class="col-md-4 col-sm-6">
+        <!-- <div class="col-md-4 col-sm-6">
           <div class="feature-box-81 bmargin"> <a href="{{url('/courses#intermediate')}}">
             <div class="image-holder">
               <div class="hover-strip">
                 <h4 class="text-white nopadding roboto-slab font-weight-3">Intermediate<span class="pull-right"><i class="fa fa-angle-double-right"></i></span></h4>
               </div>
               <img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/> </div>
-            </a> </div>
+            </a> </div> -->
           <!--end item-->
           
         </div>
         <!--end item-->
         
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6 col-sm-6">
           <div class="feature-box-81 bmargin"> <a href="{{url('/courses#advanced')}}">
             <div class="image-holder">
               <div class="hover-strip">
