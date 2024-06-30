@@ -201,9 +201,9 @@
               </div>
               <img src="{{url('/images/about-2.jpg')}}" alt="" class="img-responsive"/> </div>
             </a> </div> -->
-          <!--end item-->
+          <!--end item
           
-        </div>
+        </div>-->
         <!--end item-->
         
         <div class="col-md-6 col-sm-6">
