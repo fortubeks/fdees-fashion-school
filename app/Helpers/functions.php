@@ -9,7 +9,7 @@ function getModelList($model){
     $model_list = null;
 
     if($model == 'courses'){
-        $model_list = Course::all();
+        $model_list = Course::where('name','<>','Intermediate')->get();
     }
     if($model == 'enrollments'){
         $model_list = Enrollment::all();

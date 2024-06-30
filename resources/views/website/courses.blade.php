@@ -14,7 +14,6 @@
             <li class="dropdown"> <a href="{{url('/courses')}}" class="dropdown-toggle active">Courses +</a>
               <ul class="dropdown-menu five" role="menu">
                 <li> <a href="{{url('/courses-beginner')}}">Beginner</a> </li>
-                <li> <a href="{{url('/courses-intermediate')}}">Intermediate</a> </li>
                 <li> <a href="{{url('/courses-advanced')}}">Advanced</a> </li>
               </ul>
             </li>
@@ -69,7 +68,7 @@
         </div>
         <!--end item-->
         
-        <div class="clearfix"></div>
+        <!-- <div class="clearfix"></div>
         <div class="col-divider-margin-4"></div>
         <div class="text-box border" id="intermediate">
           <div class="col-md-6 bmargin nopadding"><img src="{{url('/images/courses-intermediate.jpg')}}" alt="" class="img-responsive"/></div>
@@ -89,7 +88,7 @@
               <a class="btn btn-pink-3 btn-round" href="{{url('/student-register')}}">Register Now</a> <a style="background-color:#DBDBDB" class="btn btn-round" href="{{url('/courses-intermediate')}}">Learn more</a>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--end item-->
         
         <div class="clearfix"></div>
